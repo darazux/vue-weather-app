@@ -4,6 +4,8 @@
   <h2>気象データ</h2>
 </template>
 
-<script setup></script>
+<script setup>
+ const props = defineProps({})
+</script>
 
 <style></style>
