@@ -1,7 +1,11 @@
 <template>
-  <Title />
-  <Form @submit-form="getWeather" />
-  <Results :results="results"  />
+  <div class="wrapper">
+    <div classs="container">
+      <Title />
+      <Form @submit-form="getWeather" />
+      <Results :results="results"  />
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -10,6 +14,7 @@
  import Title from './components/Title.vue';
  import Form from './components/Form.vue';
  import Results from './components/Results.vue';
+ import "./assets/base.css";
 
  const results = reactive({
    country: "",
