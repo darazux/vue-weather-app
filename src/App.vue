@@ -1,7 +1,7 @@
 <template>
   <Title />
   <Form @submit-form="getWeather" />
-  <Results />
+  <Results :results="results"  />
 </template>
 
 <script setup>
