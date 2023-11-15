@@ -13,7 +13,7 @@
  const city = ref('');
 
  const submitForm = () => {
-   emits("submit-form");
+   emits("submit-form", city.value);
  }
 
  const emits = defineEmits([

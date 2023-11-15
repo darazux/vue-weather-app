@@ -19,10 +19,10 @@
    icon: ""
  });
 
- const getWeather = () => {
+ const getWeather = (city) => {
    axios
      .get(
-       'http://api.weatherapi.com/v1/current.json?key=acab368a978240028be51642232108&q=London&aqi=no',
+       `http://api.weatherapi.com/v1/current.json?key=acab368a978240028be51642232108&q=${city}&aqi=no`,
      )
      .then((res) => {
        results.country = res.data.location.country,
