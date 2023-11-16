@@ -41,6 +41,11 @@ const getWeather = (city) => {
         (results.conditionText = res.data.current.condition.text),
         (results.icon = res.data.current.condition.icon);
       loading.value = false;
-    });
+    })
+    .catch((err) =>
+      alert(
+        'エラーが発生しました。ページをリロードして、もう一度トライしてください。',
+      ),
+    );
 };
 </script>
