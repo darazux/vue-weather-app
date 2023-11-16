@@ -15,5 +15,3 @@
    results: Object
  })
 </script>
-
-<style></style>
