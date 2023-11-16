@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div classs="container">
+    <div class="container">
       <Title />
       <Form @submit-form="getWeather" />
       <Results :results="results"  />
