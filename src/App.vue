@@ -31,9 +31,7 @@ const results = reactive({
 const getWeather = (city) => {
   loading.value = true;
   axios
-    .get(
-      `http://api.weatherapi.com/v1/current.json?key=acab368a978240028be51642232108&q=${city}&aqi=no`,
-    )
+    .get(`https://proxy-server-node.vercel.app/weather-data?${city}`)
     .then((res) => {
       (results.country = res.data.location.country),
         (results.cityName = res.data.location.name),
